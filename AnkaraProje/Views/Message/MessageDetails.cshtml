@@ -1,0 +1,27 @@
+﻿@model AnkaraProje.Models.TblMessage
+@{
+    ViewBag.Title = "MessageDetails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Messaj Detayları</h2>
+
+<label>Mesajı Gönderen</label>
+<input type="text" readonly class="form-control" value="@Model.SenderMessage" />
+<br />
+
+<label>Mesajı Alan</label>
+<input type="text" readonly class="form-control" value="@Model.ReceiverMessage" />
+<br />
+
+<label>Mesaj Tarihi</label>
+<input type="text" readonly class="form-control" value="@Model.MessageDate" />
+<br />
+
+<label>Konu</label>
+<input type="text" readonly class="form-control" value="@Model.Subject" />
+<br />
+
+<label>Mesajı Gönder</label>
+@Html.TextAreaFor(x=> x.MessageBody, new { @class = "form-control"})
+<br />

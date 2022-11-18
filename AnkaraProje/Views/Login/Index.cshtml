@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<br/>
+<form method="post">
+    <div class="container">
+        <h1> Login </h1>
+        <label>Username:</label>
+        <input type="text" class="form-control" name="Username" />
+        <br />
+        <label>Password:</label>
+        <input type="password" class="form-control" name="Password"/>
+        <br />
+        <input type="checkbox" /> Beni Hatırla
+        <br /><br />
+        <button class="btn btn-success">Giriş</button>
+        <br /><br />
+        @ViewBag.v
+    </div>
+</form>
